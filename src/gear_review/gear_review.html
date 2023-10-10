@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Safety Hub</title>
+    <!-- Add your CSS stylesheets here -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+<header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/src/home-page/home_page.html">Home</a></li>
+            <li><a href="/src/safety_tips/safety-tips.html">Safety Tips</a></li>
+            <li><a href="/src/gear_review/gear_review.html">Gear Reviews</a></li>
+            <li><a href="/src/community/community.html">Community</a></li>
+            <li><a href="/src/news_updates/news_updates.html">News & Updates</a></li>
+            <li><a href="/src/contact/contact.html">Contact</a></li>
+            <li><a href="#" class="login-button" id="loginBtn">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="login-modal-content">
+            <span class="close" id="closeBtn">&times;</span>
+            <h1>Login</h1>
+            <form>
+                <div class="input-container">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="login-button">Login</button>
+            </form>
+
+            <!-- Forgot Your Password? and Register links -->
+            <div class="login-links">
+                <a href="/src/forgot_password/forgot_password.html">Forgot Your Password?</a>
+                <span class="divider">|</span>
+                <a href="/src/register/register.html">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Fire Safety Hub</h1>
+            <p>Your source for fire safety tips, gear reviews, community engagement, and industry news.</p>
+        </div>
+    </section>
+
+
+
+<script src="/src/gear_review/gear_review.js"></script> <!-- Include JavaScript to control the modal -->
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Fire Safety Hub</p>
+    </footer>
+</body>
+</html>

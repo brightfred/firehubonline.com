@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireHub: Firefighting Community</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/src/home-page/home_page.html">FireHub</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/src/home-page/home_page.html">Home</a></li>
+                <li><a href="/src/submit/submit.html">Submit Post</a></li>
+                <li><a href="/src/categories/categories.html">Categories</a></li>
+                <li><a href="/src/profile/profile.html">Profile</a></li>
+                <li><a href="/src/login/login.html">Login/Register</a></li>
+            </ul>
+        </nav>
+        <h1><a href="/src/home-page/home_page.html">FireHub</a></h1>
+    </header>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <h3>Login to FireHub</h3>
+        <form action="/path_to_login_endpoint" method="POST">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="additional-options">
+                <a href="/forgot_password">Forgot your password?</a>
+                <a href="/register">Register</a>
+            </div>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+    <main>
+        <!-- Sample Post 1 -->
+<section class="post">
+    <div class="voting">
+        <button>Upvote</button>
+        <button>Downvote</button>
+    </div>
+    <div class="content">
+        <h2><a href="/post/2">Innovative Firefighting Drones Aid in Rescue Missions</a></h2>
+        <p>Submitted by <a href="/user/anna_fire">Anna Flame</a> in <a href="/categories/tech">Tech Innovations</a></p>
+        <p>Discover how drones are transforming firefighting by offering real-time visuals and delivering supplies... <a href="/post/2">Read More</a></p>
+    </div>
+</section>
+
+<!-- Sample Post 2 -->
+<section class="post">
+    <div class="voting">
+        <button>Upvote</button>
+        <button>Downvote</button>
+    </div>
+    <div class="content">
+        <h2><a href="/post/3">Smoke Alarms: The Unsung Heroes</a></h2>
+        <p>Submitted by <a href="/user/bob_rescue">Bob Rescuer</a> in <a href="/categories/safety">Safety Tips</a></p>
+        <p>Smoke alarms have saved countless lives. Let's dive deep into their history and understand their importance... <a href="/post/3">Read More</a></p>
+    </div>
+</section>
+
+<!-- Sample Post 3 -->
+<section class="post">
+    <div class="voting">
+        <button>Upvote</button>
+        <button>Downvote</button>
+    </div>
+    <div class="content">
+        <h2><a href="/post/4">A Day in the Life of a Firefighter</a></h2>
+        <p>Submitted by <a href="/user/carl_fireman">Carl Fireman</a> in <a href="/categories/lifestyle">Firefighter Lifestyle</a></p>
+        <p>Join us as we follow the challenging yet rewarding routine of a firefighter... <a href="/post/4">Read More</a></p>
+    </div>
+</section>
+
+<!-- Sample Post 4 -->
+<section class="post">
+    <div class="voting">
+        <button>Upvote</button>
+        <button>Downvote</button>
+    </div>
+    <div class="content">
+        <h2><a href="/post/5">Fire Safety for Kids: A Comprehensive Guide</a></h2>
+        <p>Submitted by <a href="/user/diana_guardian">Diana Guardian</a> in <a href="/categories/education">Education</a></p>
+        <p>Teaching fire safety to kids is crucial. Here's a guide to make the process fun and educational... <a href="/post/5">Read More</a></p>
+    </div>
+</section>
+        
+        <!-- Repeat similar sections for other posts -->
+
+    </main>
+<script src="/src/home-page/home_page.js"></script>
+    <footer>
+        <p>FireHub &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+</html>
